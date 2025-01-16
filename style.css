@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+    color: white;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #EDBFFF;
+    z-index: 8;
+    mix-blend-mode: difference;
+    transition: all linear 0.1s ;
+}
+
+.main{
+    background-color: #0F0D0D;
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+}
+#nav{
+    height: 60px;
+    width: 100%;
+    
+    display: flex;align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+#nav img{
+    height: 25px;
+}
+#nav-part2{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    gap: 30px;
+}
+#nav #circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+#nav h4{
+   font-size: 15px;
+   font-weight: 500;
+   text-transform: uppercase;
+}
+#nav h4:nth-child(1){
+    border-bottom:1.5px solid #fff;
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+}
+.page1 h1{
+ font-size: 8vw;
+ font-family: pp mori;
+ font-weight: 400;
+ margin-top: 10vw;
+ margin-left: 5vw;
+}
+.page1 h2{
+    font-size: 8vw;
+    font-family: pp mori;
+    font-weight: 400;
+    margin-left: 26vw;
+}
+.page1 video{
+    width: 60%;
+    margin-top: 10vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.page2{
+    min-height:80vh;
+    width: 100%;
+    padding: 100px 5vw;
+    border-bottom: 2px solid #e3dcdc;
+    position: relative;
+    z-index: 9;
+}
+.page2 h1{
+    font-size: 7vw;
+    font-weight: 300;
+    color: #111;
+}
+
+.page2-container{
+    height: 60vh;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.page2-left{
+    
+    width: 38%;
+}
+.page2-left h2{
+    font-size: 4vw;
+    color: #111;
+    font-weight: 300;
+    line-height: 4vw;
+}
+.page2-right{
+    
+    width: 30%;
+}
+.page2-right p{
+    font-size: 1.8vw;
+    color: #111;
+}
+.page2-right button{
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 4px 0;
+    background-color: #EDBFFF;
+    color: #000;
+}
+.page3{
+ min-height: 150vh;
+ width: 100%;
+ position: relative;
+ z-index: 9;
+ padding-top: 100px;
+
+}
+.page3 h1{
+    text-transform: uppercase;
+    font-size: 6vw;
+    font-weight: 300;
+    color: #111;
+    margin-left: 100px;
+}
+.page3-part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    
+}
+.page3-part1>.img1>img{
+    height: 600px;
+    width: 700px;
+    padding-top: 200px;
+}
+.page3-part1>.img2>img{
+    height: 500px;
+}
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 100px  ;
+}
+.elem{
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.elem img{
+    position: absolute;  
+    opacity: 0;
+    transition: all ease-out 0.5s;
+}
+.elem img:nth-child(1){
+    left: 0;
+}
+.elem img:nth-child(3){
+    right: 0;
+}
+.elem h1{
+    font-size: 6vw;
+    transition: all ease-out 0.5s;
+}
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+.elem:hover img{
+    opacity: 1;
+}
+.text-div{
+    
+    height:110px ;
+    overflow: hidden;
+    margin-right: 15%;
+
+}
+#elem{
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+#elem img{
+    position: absolute;  
+    opacity: 0;
+    transition: all ease-out 0.5s;
+}
+#elem img:nth-child(1){
+    margin-right: 60vw;
+}
+#elem img:nth-child(3){
+    right: 0;
+}
+#elem h1{
+    font-size: 6vw;
+    transition: all ease-out 0.5s;
+    margin-right: 2vw;
+    padding-left: 4.6vw;
+}
+#elem:hover h1{
+    transform: translateY(-100%);
+    color: #EDBFFF;
+    
+}
+#elem:hover img{
+    opacity: 1;
+}
+#text-div{
+    
+    height:110px ;
+    overflow: hidden;
+    margin-left: 15px;
+}
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 140px 100px;
+}
+.page5 h2{
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.box{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 20px;
+    border-top: 2px solid #dadada;
+}
+
+.box:nth-last-child(1){
+    border-bottom: 2px solid #dadada;
+
+}
+
+footer{
+    height: 20vw;
+    width: 100%;
+    position: relative;
+}
